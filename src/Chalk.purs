@@ -32,20 +32,19 @@ type Chalk =
   , bgWhite :: StoS
   }
 
-bold :: Chalk -> String -> String
+bold :: Chalk -> StoS
 bold chalk = chalk.bold 
-
 
 bgGreen :: Chalk -> StoS
 bgGreen chalk = chalk.bgGreen
 
-green :: Chalk -> String -> String
+green :: Chalk -> StoS
 green chalk = chalk.green
 
 bgYellow :: Chalk -> StoS
 bgYellow chalk  = chalk.bgYellow
 
-yellow :: Chalk -> String -> String
+yellow :: Chalk -> StoS
 yellow chalk = chalk.yellow
 
 dim :: Chalk -> StoS
@@ -90,5 +89,5 @@ white chalk = chalk.white
 gray :: Chalk -> StoS
 gray chalk = chalk.gray
 
-reset :: Chalk -> String -> String
+reset :: Chalk -> StoS
 reset chalk = chalk.reset 
